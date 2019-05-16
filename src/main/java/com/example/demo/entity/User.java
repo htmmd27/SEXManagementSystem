@@ -4,24 +4,22 @@ import java.io.Serializable;
 
 public class User implements Serializable {
     private static final long serializableUID = 1L;
-    private long account;
+    private static String id;
     private String password;
-
-    public long getAccount() {
-        return account;
-    }
-
-    public void setAccount(long account) {
-        this.account = account;
-    }
 
     public void setPassword(String password) {
         this.password = password;
     }
 
-
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getPassword() {
         return password;
+    }
+
+    public static String getId() {
+        return id;
     }
 }

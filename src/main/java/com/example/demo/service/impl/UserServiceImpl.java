@@ -17,8 +17,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public int deleteBy(long userName) {
-        return userDao.deleteBy(userName);
+    public int deleteBy(String id) {
+        return userDao.deleteBy(id);
     }
 
     @Override
@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User getByUsername(long userName) {
-        return userDao.getByUsername(userName);
+    public User getByUsername(String id) {
+        return userDao.getByUsername(id);
     }
 }
